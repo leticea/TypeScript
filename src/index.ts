@@ -214,5 +214,21 @@ interface IVehicle {
 }
 
 class Car implements IVehicle {
-    
+
+    brand
+    wheels
+
+    constructor(brand: string, wheels: number) {
+        this.brand = brand
+        this.wheels = wheels
+    }
+
+    showBrand(): void {
+        console.log(`A marca do carro é: ${this.brand}`)
+    }
 }
+
+const fusca = new Car("VW", 4);
+fusca.showBrand();
+
+// herança

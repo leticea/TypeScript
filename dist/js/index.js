@@ -141,4 +141,16 @@ const sirius = new User("Sirius", "Admin", true);
 console.log(sirius);
 sirius.showUserName();
 class Car {
+    brand;
+    wheels;
+    constructor(brand, wheels) {
+        this.brand = brand;
+        this.wheels = wheels;
+    }
+    showBrand() {
+        console.log(`A marca do carro é: ${this.brand}`);
+    }
 }
+const fusca = new Car("VW", 4);
+fusca.showBrand();
+// herança
